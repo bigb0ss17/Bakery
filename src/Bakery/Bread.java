@@ -41,6 +41,7 @@ public class Bread{
     public void setSugar(int sugar){this.sugar = sugar;}
     public void setBakingPowder(int bakingPowder){this.bakingPowder = bakingPowder;}
     public void setYeast(int yeast){this.yeast = yeast;}
+    public void setBreadName(String breadName){this.breadName = breadName;}
     public void getState(Boolean state){this.state = state;}
     public void setRecipe(String recipe){this.recipe = recipe;}
 
@@ -52,6 +53,7 @@ public class Bread{
     public int getSugar(){return this.sugar;}
     public int getBakingPowder(){return this.bakingPowder;}
     public int getYeast(){return this.yeast;}
+    public String getBreadName(){return this.breadName;}
     public Boolean getState(){return this.state;}
     public String getRecipe(){return this.recipe;}
 
