@@ -8,7 +8,7 @@ public class Bread{
     private int bakingPowder;
     private int yeast;
 
-    private final String breadName;
+    private String breadName;
 
 
     private Boolean state;

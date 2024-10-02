@@ -6,25 +6,32 @@ public class Pastry extends Bread{
 
     //no parameter constructor
     public Pastry (){
-        super(1,)
-        this.eggs = eggs;
+        super();
+        this.eggs = 2;
+        this.filling = "cream";
 
     }
 
     //constructor
-    public Pastry(int flour, double water, int sugar, int bakingpowder, int eggs, String recipe){
+    public Pastry(int flour, double water, int salt, int sugar, int bakingPowder,int yeast, String breadName,boolean state, String recipe, int eggs, String filling){
+        super(flour, water, salt, sugar, bakingPowder, yeast, breadName,state, recipe);
         this.eggs = eggs;
+        this.filling = filling;
     }
 
     //setter
 
-    public void setEggs(int eggs){this.eggs = eggs}
+    public void setEggs(int eggs){this.eggs = eggs;}
+    public void setFilling(String Filling){this.filling = filling;}
 
     //getter
 
-    public int getEggs(){return this.egg;}
+    public int getEggs(){return this.eggs;}
+    public String getFilling(){return this.filling;}
 
     //toString method
 
-    public String
+    public String toString(){
+        return "Pastry";
+    }
 }

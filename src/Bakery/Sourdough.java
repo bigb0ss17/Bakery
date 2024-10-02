@@ -4,14 +4,14 @@ public class Sourdough extends Bread {
     private double starter;
 
     public Sourdough(){
-        super(1, 2.0, 3, 2.5, 4, "Simple Sourdough Recipe");
+        super();
         this.starter = 5.0;
 
 
     }
 
-    public Sourdough(int flour, double water, int salt,int yeast, double starter,boolean bake String recipe){
-        super(flour, water, salt, yeast, 2.0, true, "Recipe");
+    public Sourdough(int flour, double water, int salt, int sugar, int bakingPowder,int yeast, String breadName,boolean state, String recipe, double starter){
+        super(flour, water, salt, sugar, bakingPowder, yeast, breadName,state, recipe);
         this.starter = starter;
 
     }
@@ -27,8 +27,7 @@ public class Sourdough extends Bread {
     //ingredients
 
     public String getIngredients(){
-        return String.format("%.2f cups of flour\n%.2f cups of water\n%.2f tsps of salt\n%.2f tsps of sugar\n%.2f tsps of baking powder\n%.2f tsps of yeast\n%.2f tablespoons of starter\n " +
-                flour, water, salt, sugar, yeast,bake,starter);
+        return String.format("%.2f cups of flour\n%.2f cups of water\n%.2f tsps of salt\n%.2f tsps of sugar\n%.2f tsps of baking powder\n%.2f tsps of yeast\n%.2d tablespoons of starter\n " + flour, water, salt, sugar, yeast,bake,starter);
     }
 
     //recipe
