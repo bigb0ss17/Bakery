@@ -27,7 +27,7 @@ public class Sourdough extends Bread {
     //ingredients
 
     public String getIngredients(){
-        return String.format("%.2f cups of flour\n%.2f cups of water\n%.2f tsps of salt\n%.2f tsps of sugar\n%.2f tsps of baking powder\n%.2f tsps of yeast\n%.2d tablespoons of starter\n " + flour, water, salt, sugar, yeast,bake,starter);
+        return super.getIngredients() + ", Starter: " + starter + "g";
     }
 
     //recipe
